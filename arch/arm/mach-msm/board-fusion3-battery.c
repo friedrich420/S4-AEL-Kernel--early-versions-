@@ -28,6 +28,10 @@
 #include "devices-msm8x60.h"
 #include "board-8064.h"
 
+#ifdef CONFIG_FORCE_FAST_CHARGE
+#include <linux/fastchg.h>
+#endif
+
 #if defined(CONFIG_BATTERY_SAMSUNG)
 #include <linux/battery/sec_battery.h>
 #include <linux/battery/sec_fuelgauge.h>
